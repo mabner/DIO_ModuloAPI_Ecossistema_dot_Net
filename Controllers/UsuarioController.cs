@@ -26,10 +26,10 @@ namespace TrilhaApiDesafio.Controllers
 			return Ok(obj);
 		}
 
-		[HttpGet("Apresentar/{name}")]
-		public IActionResult Apresentar(string name)
+		[HttpGet("Apresentar/{nome}")]
+		public IActionResult Apresentar(string nome)
 		{
-			var message = $"Olá {name}, seja bem vindo!";
+			var message = $"Olá {nome}, seja bem vindo!";
 			return Ok(new { message });
 		}
 	}
