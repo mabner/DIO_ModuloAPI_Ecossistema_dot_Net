@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace TrilhaApiDesafio.Controllers
+namespace ModuloAPI.Controllers
 {
 	[ApiController]
 	[Route("[controller]")]
