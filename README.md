@@ -14,3 +14,10 @@ dotnet tool install --global dotnet-ef
 dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 ```
+
+### Migrations
+
+```shell
+dotnet-ef migrations add CriacaoTabelaContato
+dotnet-ef database update
+```
