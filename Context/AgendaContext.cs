@@ -8,6 +8,7 @@ using ModuloAPI.Models;
 
 namespace ModuloAPI.Context
 {
+	// AgendaContext is responsible for accessing the database
 	public class AgendaContext : DbContext
 	{
 		// Receives the DB connection and send it to base (DbContext) 
