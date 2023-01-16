@@ -13,6 +13,7 @@ namespace ModuloAPI.Controllers
 	[Route("[controller]")]
 	public class ContatoController : ControllerBase
 	{
+		// Dependency injection
 		private readonly AgendaContext _context;
 
 		public ContatoController(AgendaContext context)
@@ -25,7 +26,7 @@ namespace ModuloAPI.Controllers
 		{
 			_context.Add(contato);
 			_context.SaveChanges();
-			return Ok(contato);
+			return CreatedAtAction(nameof(ObterPorId), new { id = contato.Id }, contato);
 		}
 
 		[HttpGet("{id}")]
